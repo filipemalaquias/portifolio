@@ -1,0 +1,345 @@
+:root{
+    --CorBody: #04091d;
+    --corSecundaria: #ffac2c;
+    --corTercearia: #ff9a00;
+    --corTexto: #ebebeb;
+    --corFooter: #010415;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: auto;
+    
+    background-color: var(--CorBody);
+    color: var(--corTexto);
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    background: #ffac2c;
+}
+::-webkit-scrollbar-thumb {
+    background: #04091d;
+    background-image: url('img/textura.png');
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 75vh;
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar{
+    height: 45px;
+    padding: 0px 20px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.2px solid var(--corTercearia);
+    background-color: var(--CorBody);
+    background-image: url('img/textura.png');
+    background-attachment: fixed;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo p{
+   
+    font-size: 19pt;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar ul li{
+    margin: 0px 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--corTexto);
+    font-family: cursive;
+}
+.navbar ul li a:hover{
+    color: var(--corSecundaria);
+}
+/* ///////////////////////// */
+.apresentacao{
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+    
+    margin: 140px 20px;
+}
+.apresentacao .apresentacaoTexto{
+    width: 26em;
+    margin: 20px 10px;
+    
+    
+}
+.apresentacao .apresentacaoTexto .ola{
+    padding: 10px 10px;
+    width: 120px;
+    height: 40px;
+    background-color: var(--corSecundaria);
+    text-align: center;
+    font-family: monospace;
+    border-radius: 10px;
+}
+.apresentacao .apresentacaoTexto .txtApre{
+    margin: 5px 0;
+    font-size: 30pt;
+   
+}
+
+/* /////////////////////////// */
+
+#sobre{
+    width: 100%;
+    margin: 40px 0px;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Sobre ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Sobre h1{
+    margin: 40px 0;
+    text-align: center;
+    font: 17pt normal cursive;
+    color: var(--corSecundaria);
+}
+
+.sobre_me
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.textoSobre{
+    width: 28em;
+    margin: 0px 20px;
+}
+.textoSobre p:nth-child(1), .textoSobre p:nth-child(2), 
+.textoSobre p:nth-child(3), .textoSobre p:nth-child(4),
+.textoSobre p:nth-child(5), .textoSobre p:nth-child(6){
+    margin: 5px 0px;
+    font: 15px cursive;
+}
+.textoSobre p:nth-child(7){
+    width: 19em;
+    margin: 20px auto;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 14px;
+   
+}
+.textoSobre p:nth-child(8){
+    font-style: italic;
+    font-size: 12px;
+    font-family: monospace;
+}
+.imgSobre{
+    
+    margin: 0px 20px;
+}
+ .imgSobre img{
+    width: 17em;
+    height: 20em;
+    background-color: var(--corSecundaria);
+    margin: 0px 20px;
+}
+/* ////////////////////////////////////////// */
+#servicos{
+    width: 100%;
+    height: auto;
+    margin: 60px 0;
+    overflow: hidden;
+    background-color: var(--corTercearia);
+}
+.servicos{
+    width: 100%;
+    background-color: var(--corTercearia);
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicos ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicos ul li{
+    width: 15em;
+    height: auto;
+    padding: 15px 15px;
+    list-style: none;
+    margin: 0px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.servicos ul li:hover > i{
+    color: #fff;
+}
+.servicos ul li:hover{
+    color: #fff;
+    background-color: var(--CorBody);
+}
+.servicos ul li p{
+    font: 12px cursive italic;
+    text-align: justify;
+}
+.servicos i{
+    color: var(--CorBody);
+    font-size: 37pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+#servicos h1{
+    margin: 40px 0;
+    text-align: center;
+    font: 17pt normal cursive;
+    color: var(--corTexto);
+}
+/* ///////////////////////////////////////////////////////////////// */
+#habilidades{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 10px 30px;
+}
+#habilidades h1{
+    margin: 20px 0;
+    text-align: center;
+    font: 17pt normal cursive;
+    color: var(--corTexto);
+}
+#habilidades ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#habilidades ul li nav{
+    margin: 20px 0px;
+}
+/* /////// */
+footer{
+    background-color: var(--corFooter);
+    background-image: url('img/textura.png');
+    background-attachment: fixed;
+    width: 100%;
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    width: 40px;
+   height: auto;
+    display: none;
+    cursor: pointer;
+}
+.menu:checked > .links{
+    display: block;
+}
+.menu1, .menu2, .menu3{
+
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    
+}
+.pargrafo{
+    display: none;
+}
+/* Responsive */
+@media screen and (max-width: 860px){
+    .links{
+        width: 100%;
+        height: 190vh;
+        background-color: var(--CorBody);
+        position: absolute;
+       display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .links ul{
+        position: absolute;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 73%;
+    }
+    /* .menu:checked > .links ul{
+        display: block;
+    } */
+    .menu{
+        display: block;
+    }
+   .pargrafo{
+       position: absolute;
+    display: block;
+    font: 18pt cursive;
+    cursor: pointer;
+    top: -250%;
+}
+.pargrafo:hover{
+    color: var(--corTercearia);
+}
+    .imgSobre img{
+        margin: 2px auto;
+}
+}
+@media screen and (max-width:960px){
+    .Sobre ul{
+        display: block;
+        
+    }
+    .servicos ul{
+        display: block;
+    }
+    
+
+}
+
+/* Animações */
+@keyframes Mudar{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
